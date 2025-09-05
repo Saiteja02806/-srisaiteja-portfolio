@@ -1,7 +1,10 @@
 services:
   - type: web
-    name: srisaiteja-portfolio
+    name: srisaiteja-backend
     env: node
-    buildCommand: npm install
+    repo: https://github.com/Saiteja02806/-srisaiteja-portfolio
+    branch: main
+    buildCommand: npm ci
     startCommand: npm start
     plan: free
+
