@@ -1,7 +1,135 @@
 <!doctype html>
-<html>
-  <head><meta charset="utf-8"><title>My GitHub Page</title></head>
-  <body>
-    <h1>Hello — my site is live on GitHub Pages!</h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Srisaiteja — AI Engineer & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <h1>Sri<span class="accent">Saiteja</span></h1>
+        <p class="job">AI Engineer & Full-Stack Developer</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact" class="btn-outline">Enquiry</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero container">
+      <div class="hero-left">
+        <h2>Building robust ML & production systems that scale.</h2>
+        <p class="lead">I design and deploy end-to-end AI solutions, MLOps pipelines, and web applications. Open to remote roles & freelance projects.</p>
+        <div class="cta-row">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn-ghost" href="assets/Srisaiteja_Resume.pdf" download>Download Resume</a>
+        </div>
+        <ul class="skill-list">
+          <li>Python • TensorFlow • PyTorch</li>
+          <li>Hugging Face • LangChain • REST APIs</li>
+          <li>AWS • GCP • Docker • MLOps</li>
+        </ul>
+      </div>
+      <div class="hero-right">
+        <div class="card profile-card">
+          <img src="assets/profile.jpg" alt="Profile photo" class="avatar">
+          <h3>Srisaiteja Chundu</h3>
+          <p class="muted">Hyderabad, India • srisaiteja03@gmail.com</p>
+          <div class="socials">
+            <a href="https://github.com/Saiteja02806" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About me</h2>
+      <p>I’m an AI Engineer building ML pipelines, LLM integrations, and production web apps. I focus on reliable inference, cost-efficient deployment, and clean code. I enjoy mentoring and writing technical content.</p>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <h3>Threat Validation Framework</h3>
+          <p>Network traffic analysis and threat intelligence pipeline using TensorFlow, Flask, and ELK for monitoring and alerting.</p>
+        </article>
+        <article class="project">
+          <h3>Test Automation Suite</h3>
+          <p>Selenium + Python automation for UI and API testing with scheduled runs and reporting.</p>
+        </article>
+        <article class="project">
+          <h3>Portfolio AI Chat</h3>
+          <p>Small LLM-powered assistant prototype integrating LangChain and Hugging Face models (prototype).</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="container section">
+      <h2>Education & Certificates</h2>
+      <ul class="resume-list">
+        <li><strong>B.Tech — CSE</strong>, Vel Tech (2021–2025) — CGPA 9.0</li>
+        <li>Generative AI with LangChain & Hugging Face</li>
+        <li>Python Essentials</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container section contact-section">
+      <div class="contact-grid">
+        <div>
+          <h2>Contact / Enquiry</h2>
+          <p>Have a project or opportunity? Send a quick message — I’ll reply within 48 hours.</p>
+
+          <form id="enquiryForm" class="form">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" id="name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" id="email" required>
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" id="message" rows="6" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn">Send Message</button>
+              <div id="formStatus" class="form-status" aria-live="polite"></div>
+            </div>
+          </form>
+        </div>
+
+        <aside class="contact-info">
+          <h3>Quick info</h3>
+          <p><strong>Email</strong><br>srisaiteja03@gmail.com</p>
+          <p><strong>Phone</strong><br>+91 8340879427</p>
+          <p><strong>Location</strong><br>Hyderabad, India</p>
+          <div class="map-placeholder">Map (add later)</div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Srisaiteja — Built with ♥ • <a href="#contact">Contact</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
 </html>
+
